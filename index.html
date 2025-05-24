@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Mi Amor</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffe6f0;
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #d63384;
+    }
+    .main-img, .surprise-img {
+      width: 300px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .main-img:hover {
+      transform: scale(1.05);
+    }
+    #hidden-message {
+      margin-top: 30px;
+      display: none;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hola Preciosa 💖</h1>
+  <p>Solo quería recordarte lo especial que eres para mí y lo importante que es verte feliz. Tú sonrisa vale más que cualquier cosa kjsds ✨</p>
+
+  <!-- Imagen principal -->
+  <img src="gat.jpg" alt="Nuestra foto" class="main-img" onclick="mostrarMensaje()" />
+
+  <!-- Cuadro oculto -->
+  <div id="hidden-message">
+    <p>¡Sorpresaaaa! La obsesión que tengo contigo no es normal skjdjs. Amo como te pones contenta con los detalles espero lo disfrutes niña bonita ❤️</p>
+    <img src="muse.jpg" alt="Otra sorpresa" class="surprise-img" />
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("hidden-message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
